@@ -1,7 +1,7 @@
 /* Container for the How It Works section */
 .how-it-works {
   padding: 4rem 2rem; /* Adds padding around the section */
-  background-color: var(--BG-Dark, radial-gradient(194.79% 123.02% at 93.75% 92.19%, #102636 0%, #12090D 41.43%)); 
+  background: var(--BG-Dark, radial-gradient(194.79% 123.02% at 93.75% 92.19%, #102636 0%, #12090D 41.43%)); 
   color: #fff; /* Default text color */
 }
 
@@ -38,6 +38,7 @@
 
 /* Individual step */
 .how-it-works .step {
+  align-items: left; /* Aligns the content to the left */
   margin-bottom: 2rem; /* Adds space below each step */
   padding: 1rem; /* Adds padding around each step */
 }
@@ -54,7 +55,7 @@
   font-family: 'Inter', sans-serif;
   font-size: 80px; /* Font size for the step number */
   font-weight: 700; /* Font weight for the step number */
-  color: #21e677; /* Green color for the number */
+  color: #6acd54; /* Green color for the number */
   margin-bottom: 1rem; /* Adds space below the number */
 }
 
@@ -63,7 +64,7 @@
   font-family: 'Inter', sans-serif;
   font-size: 20px; /* Font size for the step heading */
   font-weight: 600; /* Font weight for the step heading */
-  color: #21e677; /* Green color for the heading */
+  color: #6acd54; /* Green color for the heading */
   margin-bottom: 1rem; /* Adds space below the heading */
 }
 
@@ -79,21 +80,18 @@
 
 /* Sign up button */
 .how-it-works .sign-up-button {
-  font-family: 'Inter', sans-serif;
-  font-size: 16px; /* Font size for the button */
-  font-weight: 600; /* Font weight for the button */
-  line-height: 26px; /* Line height for the button */
-  letter-spacing: 0.5px; /* Letter spacing for the button */
-  color: #21e677; /* Text color */
-  background-color: transparent; /* Transparent background */
-  border: 2px solid #21e677; /* Green border */
-  padding: 0.5rem 1rem; /* Padding inside the button */
-  cursor: pointer; /* Cursor changes to pointer on hover */
-  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
-  margin-top: 1rem; /* Adds space above the button */
+  background: #529f41; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    margin-top: 10%;
+    padding: 0.75rem 1.5rem; /* Padding inside the button */
+    font-size: 1rem; /* Font size for button text */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    text-transform: uppercase; /* Uppercase text */
 }
 
 .how-it-works .sign-up-button:hover {
-  background-color: #21e677; /* Background color on hover */
+  background-color: #6acd54; /* Background color on hover */
   color: #0b0b0d; /* Text color on hover */
 }
