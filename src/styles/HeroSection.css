@@ -1,0 +1,130 @@
+.hero {
+    display: flex; /* Use flexbox for layout */
+    justify-content: flex-start; /* Align content to the left */
+    align-items: center; /* Center content vertically */
+    text-align: left; /* Align text to the left */
+    padding: 2rem; /* Padding around the section */
+    background-color: #000000; /* Dark background color */
+    color: white; /* Text color */
+    position: relative; /* Relative positioning for child elements */
+    overflow: hidden; /* Hide overflow content */
+  }
+  
+  .hero-content {
+    padding-top: 10%;
+    max-width: 600px; /* Max width of the content */
+    z-index: 1; /* Ensure content is above the image */
+    margin-left: 2rem; /* Add some margin to the left */
+    padding-bottom: 10%;
+  }
+  
+  .hero h1 {
+   
+    color: var(--White, #FFF); /* White color for text */
+    font-family: "Avenir Next", sans-serif; /* Font family */
+    font-size: 7vw !important; /* Responsive font size */
+    font-weight: 700; /* Bold font weight */
+    line-height: 1.05; /* Line height */
+    letter-spacing: -2px; /* Letter spacing */
+    text-transform: uppercase; /* Uppercase text */
+    margin-bottom: 0.5rem; /* Margin below the text */
+    
+  }
+  
+
+  .hero .green-gradient {
+    background: var(--Radial-Green, radial-gradient(314.71% 31.58% at 51.82% 81.08%, #7AE98A 30%, #4AAA35 100%)); /* Gradient background */
+    background-clip: text; /* Clip background to text */
+    -webkit-background-clip: text; /* Webkit-specific background clip */
+    -webkit-text-fill-color: transparent; /* Make text fill transparent */
+    z-index: -1 !important; /* Set z-index to -1 to position the text behind the image */
+    margin-bottom: 1rem; /* Margin below the gradient text */
+  }
+  
+  .hero .sub-text {
+    color: rgba(255, 255, 255, 0.65); /* Subtext color with opacity */
+    font-family: 'Inter', sans-serif; /* Font family for subtext */
+    font-size: 20px; /* Font size for subtext */
+    font-weight: 400; /* Font weight for subtext */
+    line-height: 26px; /* Line height for subtext */
+    letter-spacing: 0.5px; /* Letter spacing for subtext */
+    margin-bottom: 1.5rem; /* Margin below the subtext */
+  }
+  
+  .hero-button {
+    background: #529f41; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    padding: 0.75rem 1.5rem; /* Padding inside the button */
+    font-size: 1rem; /* Font size for button text */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    text-transform: uppercase; /* Uppercase text */
+  }
+  
+  .hero-button:hover {
+    opacity: 0.8; /* Slight opacity change on hover */
+  }
+  
+  .hero-image {
+    position: absolute; /* Absolute positioning */
+    right: -15%; /* Move image to the right */
+    bottom: -10%; /* Move image to the bottom */
+    width: 70%; /* Width of the image container */
+    z-index: 1; /* Ensure image is behind text */
+  }
+  
+  .hero-image img {
+    width: 100%; /* Full width for image */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  @media (min-width: 768px) {
+    .hero {
+      padding: 4rem 2rem; /* Padding for larger screens */
+    }
+  
+    .hero-content {
+      max-width: 80%; /* Max width for content */
+      margin-left: 3%; /* Margin to the left */
+      text-align: left ; /* Align text to the left */
+    }
+  
+    .hero h1 {
+      font-size: 4rem; /* Font size for larger screens */
+    }
+  
+    .hero p {
+        padding-top: 1%;
+        padding-bottom: 1%;
+      font-size: 1.5rem; /* Font size for subtext */
+    }
+  
+    .hero-image {
+      width: 50%; /* Width of the image container */
+      right: -10%; /* Adjust image position */
+      bottom: -5%; /* Adjust image position */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .hero {
+      padding: 6rem 4rem; /* Padding for extra large screens */
+    }
+  
+    .hero h1 {
+      font-size: 5rem; /* Font size for extra large screens */
+    }
+  
+    .hero p {
+        width: 70%;
+      font-size: 1.75rem; /* Font size for subtext */
+    }
+  
+    .hero-image {
+      width: 110%; /* Width of the image container */
+      right: -32%; /* Adjust image position */
+      bottom: -28%; /* Adjust image position */
+    }
+  }
+  

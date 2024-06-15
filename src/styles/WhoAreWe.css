@@ -1,0 +1,78 @@
+/* Container for the Who Are We section */
+.who-are-we {
+  padding: 4rem 2rem; /* Adds padding around the section */
+  background-color: #e1f4e4; /* Background color matching the screenshot */
+  color: #102636; /* Default text color */
+}
+
+/* Container for the content */
+.who-are-we .container {
+  max-width: 1200px; /* Limits the width of the content */
+  margin: 0 auto; /* Centers the container */
+  display: flex; /* Flexbox for layout */
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  align-items: center; /* Aligns items vertically center */
+}
+
+/* Content section */
+.who-are-we .content {
+  flex: 1; /* Takes up equal space */
+  min-width: 300px; /* Minimum width to maintain layout */
+  margin-right: 2rem; /* Adds space to the right of the content */
+}
+
+/* Image section */
+.who-are-we .image {
+  flex: 1; /* Takes up equal space */
+  min-width: 300px; /* Minimum width to maintain layout */
+}
+
+/* Image size and styling */
+.who-are-we .image img {
+  max-width: 100%; /* Ensures image doesn't exceed its container's width */
+  height: auto; /* Maintains aspect ratio */
+  display: block; /* Removes bottom space caused by inline-block */
+  max-height: 400px; /* Sets a maximum height for the image */
+}
+
+/* Heading */
+.who-are-we h2 {
+  font-family: 'Inter', sans-serif;
+  font-size: 40px; /* Font size for the heading */
+  font-weight: 600; /* Font weight for the heading */
+  line-height: 50px; /* Line height for the heading */
+  letter-spacing: 0.3px; /* Letter spacing for the heading */
+  color: var(--Heading-Color, #102636); /* Text color */
+  margin-bottom: 1.5rem; /* Adds space below the heading */
+}
+
+/* Paragraph text */
+.who-are-we p {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px; /* Font size for the paragraph */
+  font-weight: 400; /* Font weight for the paragraph */
+  line-height: 24px; /* Line height for the paragraph */
+  letter-spacing: 0.3px; /* Letter spacing for the paragraph */
+  color: var(--Heading-Color, #102636); /* Text color */
+  margin-bottom: 2rem; /* Adds space below the paragraph */
+}
+
+/* Call to Action button */
+.who-are-we .cta-button {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px; /* Font size for the button */
+  font-weight: 600; /* Font weight for the button */
+  line-height: 26px; /* Line height for the button */
+  letter-spacing: 0.5px; /* Letter spacing for the button */
+  color: var(--Link, #0070C9); /* Text color */
+  background-color: transparent; /* Transparent background */
+  border: 2px solid var(--Link, #0070C9); /* Border color */
+  padding: 0.5rem 1rem; /* Padding inside the button */
+  cursor: pointer; /* Cursor changes to pointer on hover */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+.who-are-we .cta-button:hover {
+  background-color: var(--Link, #0070C9); /* Background color on hover */
+  color: #fff; /* Text color on hover */
+}

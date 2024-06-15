@@ -1,0 +1,119 @@
+/* Container for the services section */
+.services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2rem;
+    background-color: #e1f4e4; /* Background color */
+    color: var(--Heading-Color, #102636); /* Text color */
+  }
+  
+  /* Container for the service blocks */
+  .services-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    width: 100%;
+  }
+  
+  /* Service block styling */
+  .service-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  @media (min-width: 768px) {
+    .service-block {
+      flex-direction: row; /* Row layout for larger screens */
+      justify-content: space-between; /* Space between image and content */
+    }
+  
+    .service-block.reverse {
+      flex-direction: row-reverse; /* Reverse row layout for alternating position */
+    }
+  }
+  
+  /* Styling for the image */
+  .service-image {
+    width: 100%;
+    max-width: 600px; /* Adjust image size */
+    height: 600px; /* Set height to ensure square aspect ratio */
+    object-fit: cover; /* Ensure the image covers the square without distortion */
+    margin-bottom: 1rem;
+  }
+  
+  @media (min-width: 768px) {
+    .service-image {
+      margin-bottom: 0;
+      margin-right: 2rem; /* Space between image and content */
+    }
+  
+    .service-block.reverse .service-image {
+      margin-right: 0;
+      margin-left: 2rem; /* Space for reversed layout */
+    }
+  }
+  
+  /* Styling for the content */
+  .services-content {
+    max-width: 600px;
+    text-align: left;
+  }
+  
+  /* Heading styles */
+  .services-content h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px; /* 125% */
+    letter-spacing: 0.3px;
+    margin-bottom: 5%;
+
+    color: var(--Heading-Color, #102636); /* Heading color */
+  }
+  
+  /* Subtext styles */
+  .services-content p {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
+    letter-spacing: 0.3px;
+    color: var(--Heading-Color, #102636); /* Paragraph color */
+    margin-bottom: 2rem;
+  }
+  
+  .services-content .learn-more {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #0066ff; /* Link color */
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+  }
+  
+
+  /* Learn More button styles */
+.services-content .learn-more {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px; /* Updated font size */
+    font-weight: 600; /* Updated font weight */
+    line-height: 26px; /* Updated line height */
+    letter-spacing: 0.5px; /* Updated letter spacing */
+    color: var(--Link, #0070C9); /* Updated link color */
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .learn-more-arrow {
+    width: 19.605px;
+    height: 29.269px;
+    flex-shrink: 0;
+    margin-left: 0.2rem;
+  }
+  

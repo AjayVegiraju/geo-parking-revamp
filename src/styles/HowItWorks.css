@@ -1,0 +1,99 @@
+/* Container for the How It Works section */
+.how-it-works {
+  padding: 4rem 2rem; /* Adds padding around the section */
+  background-color: var(--BG-Dark, radial-gradient(194.79% 123.02% at 93.75% 92.19%, #102636 0%, #12090D 41.43%)); 
+  color: #fff; /* Default text color */
+}
+
+/* Container for the content */
+.how-it-works .container {
+  max-width: 1200px; /* Limits the width of the content */
+  margin: 0 auto; /* Centers the container */
+  text-align: center; /* Centers the text inside the container */
+}
+
+/* Section heading */
+.how-it-works h2 {
+  font-family: 'Inter', sans-serif;
+  font-size: 40px; /* Font size for the heading */
+  font-weight: 600; /* Font weight for the heading */
+  line-height: 50px; /* Line height for the heading */
+  letter-spacing: 0.3px; /* Letter spacing for the heading */
+  color: var(--White, #FFF); /* Text color */
+  margin-bottom: 2rem; /* Adds space below the heading */
+}
+
+/* Container for the steps */
+.how-it-works .steps {
+  display: flex;
+  flex-direction: column; /* Stack the steps vertically */
+}
+
+@media (min-width: 768px) {
+  .how-it-works .steps {
+    flex-direction: row; /* Arrange the steps in a row on larger screens */
+    justify-content: space-between; /* Distributes space between the steps */
+  }
+}
+
+/* Individual step */
+.how-it-works .step {
+  margin-bottom: 2rem; /* Adds space below each step */
+  padding: 1rem; /* Adds padding around each step */
+}
+
+@media (min-width: 768px) {
+  .how-it-works .step {
+    flex: 1; /* Allows steps to grow and fill the available space */
+    margin-bottom: 0; /* Removes the bottom margin on larger screens */
+  }
+}
+
+/* Step number */
+.how-it-works .number {
+  font-family: 'Inter', sans-serif;
+  font-size: 80px; /* Font size for the step number */
+  font-weight: 700; /* Font weight for the step number */
+  color: #21e677; /* Green color for the number */
+  margin-bottom: 1rem; /* Adds space below the number */
+}
+
+/* Step heading */
+.how-it-works h3 {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px; /* Font size for the step heading */
+  font-weight: 600; /* Font weight for the step heading */
+  color: #21e677; /* Green color for the heading */
+  margin-bottom: 1rem; /* Adds space below the heading */
+}
+
+/* Step description */
+.how-it-works p {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px; /* Font size for the step description */
+  font-weight: 400; /* Font weight for the step description */
+  line-height: 24px; /* Line height for the step description */
+  letter-spacing: 0.3px; /* Letter spacing for the step description */
+  color: #fff; /* Text color */
+}
+
+/* Sign up button */
+.how-it-works .sign-up-button {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px; /* Font size for the button */
+  font-weight: 600; /* Font weight for the button */
+  line-height: 26px; /* Line height for the button */
+  letter-spacing: 0.5px; /* Letter spacing for the button */
+  color: #21e677; /* Text color */
+  background-color: transparent; /* Transparent background */
+  border: 2px solid #21e677; /* Green border */
+  padding: 0.5rem 1rem; /* Padding inside the button */
+  cursor: pointer; /* Cursor changes to pointer on hover */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+  margin-top: 1rem; /* Adds space above the button */
+}
+
+.how-it-works .sign-up-button:hover {
+  background-color: #21e677; /* Background color on hover */
+  color: #0b0b0d; /* Text color on hover */
+}
