@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/FleetEfficiency.css';
+import serviceImage3 from '../assets/futuristic-autonomous-car-navigating-highspeed-city-traffic-look-into-future-urban-transport.jpg';
 
 const FleetEfficiencySection = () => {
     return (
@@ -10,7 +11,7 @@ const FleetEfficiencySection = () => {
                     <hr className="underline" />
                     <div className="text-image-row">
                         <div className="image-container">
-                            <img src="src\assets\serviceImage3.jpg" alt="Parking lot" />
+                            <img src={serviceImage3} alt="Parking lot" />
                         </div>
                         <div className="text-container">
                             <h2>Optimize Operations with GeoParking's Advanced Solutions</h2>
@@ -20,13 +21,7 @@ const FleetEfficiencySection = () => {
                                 <li>Parking lots strategically located to reduce non-revenue generating miles.</li>
                                 <li>Service hubs for inspection, cleaning, and zero-carbon charging.</li>
                             </ul>
-                            <a href="#learn-more" className="learn-more">
-                                Learn More
-                                <svg xmlns="http://www.w3.org/2000/svg" width="31" height="22" viewBox="0 0 31 22" fill="none" className="learn-more-arrow">
-                                    <path d="M1.93994 11.1185L28.6003 11.1185" stroke="#fff" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
-                                    <path d="M18.0606 1.47057L30 11.1973L18.0606 20.924" stroke="#fff" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
-                                </svg>
-                            </a>
+                        
                         </div>
                     </div>
                 </div>

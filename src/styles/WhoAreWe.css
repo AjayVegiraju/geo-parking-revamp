@@ -19,20 +19,23 @@
   flex: 1; /* Takes up equal space */
   min-width: 300px; /* Minimum width to maintain layout */
   margin-right: 2rem; /* Adds space to the right of the content */
+  text-align: left; /* Align text to the left */
 }
 
 /* Image section */
 .who-are-we .image {
   flex: 1; /* Takes up equal space */
   min-width: 300px; /* Minimum width to maintain layout */
+  display: flex; /* Flexbox for centering */
+  justify-content: center; /* Center image horizontally */
 }
 
 /* Image size and styling */
 .who-are-we .image img {
-  max-width: 100%; /* Ensures image doesn't exceed its container's width */
-  height: auto; /* Maintains aspect ratio */
+  width: 400px; /* Fixed width for the square image */
+  height: 400px; /* Fixed height for the square image */
+  object-fit: cover; /* Ensures the image covers the square area */
   display: block; /* Removes bottom space caused by inline-block */
-  max-height: 400px; /* Sets a maximum height for the image */
 }
 
 /* Heading */

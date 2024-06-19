@@ -15,30 +15,49 @@
 /* Section heading */
 .how-it-works h2 {
   font-family: 'Inter', sans-serif;
-  font-size: 40px; /* Font size for the heading */
-  font-weight: 600; /* Font weight for the heading */
-  line-height: 50px; /* Line height for the heading */
-  letter-spacing: 0.3px; /* Letter spacing for the heading */
+  font-size: 60px; /* Font size for the heading */
+  font-weight: 500; /* Match font weight */
+  line-height: 50px; /* Match line height */
+  letter-spacing: 0.3px; /* Match letter spacing */
   color: var(--White, #FFF); /* Text color */
   margin-bottom: 2rem; /* Adds space below the heading */
+  text-align: left;
+  position: relative; /* For the underline */
+}
+
+/* Underline for the heading */
+.how-it-works h2::after {
+  content: '';
+  display: block;
+  width: 100%; /* Width of the underline */
+  height: 4px; /* Height of the underline */
+  background: #464645; /* Color of the underline */
+  position: absolute;
+  bottom: -30px; /* Position below the heading */
+  left: 0;
 }
 
 /* Container for the steps */
 .how-it-works .steps {
   display: flex;
   flex-direction: column; /* Stack the steps vertically */
+  align-items: flex-start; /* Align items to the left */
+  margin-top: 60px;
 }
 
 @media (min-width: 768px) {
   .how-it-works .steps {
     flex-direction: row; /* Arrange the steps in a row on larger screens */
     justify-content: space-between; /* Distributes space between the steps */
+    align-items: flex-start; /* Align items to the left */
   }
 }
 
 /* Individual step */
 .how-it-works .step {
-  align-items: left; /* Aligns the content to the left */
+  display: flex; /* Add flexbox layout */
+  flex-direction: column; /* Stack children vertically */
+  align-items: flex-start; /* Align items to the left */
   margin-bottom: 2rem; /* Adds space below each step */
   padding: 1rem; /* Adds padding around each step */
 }
@@ -61,11 +80,14 @@
 
 /* Step heading */
 .how-it-works h3 {
+  margin-top: 1.25rem;
   font-family: 'Inter', sans-serif;
-  font-size: 20px; /* Font size for the step heading */
+  letter-spacing: 0.5px !important;
+  font-size: 30px; /* Font size for the step heading */
   font-weight: 600; /* Font weight for the step heading */
   color: #6acd54; /* Green color for the heading */
   margin-bottom: 1rem; /* Adds space below the heading */
+  text-align: left;
 }
 
 /* Step description */
@@ -76,19 +98,31 @@
   line-height: 24px; /* Line height for the step description */
   letter-spacing: 0.3px; /* Letter spacing for the step description */
   color: #fff; /* Text color */
+  text-align: left; /* Align text to the left */
+}
+
+/* Additional margin for the second step */
+.how-it-works .step:nth-child(2) p {
+  margin-top: 2rem; /* Add margin-top to move the text down */
+}
+
+/* Centered button container */
+.how-it-works .centered-button {
+  display: flex; /* Use flexbox */
+  justify-content: flex-start; /* Align to the left */
+  margin-top: 2rem; /* Add space above the button */
 }
 
 /* Sign up button */
 .how-it-works .sign-up-button {
   background: #529f41; /* Button background color */
-    color: white; /* Button text color */
-    border: none; /* No border */
-    margin-top: 10%;
-    padding: 0.75rem 1.5rem; /* Padding inside the button */
-    font-size: 1rem; /* Font size for button text */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor on hover */
-    text-transform: uppercase; /* Uppercase text */
+  color: white; /* Button text color */
+  border: none; /* No border */
+  padding: 0.75rem 1.5rem; /* Padding inside the button */
+  font-size: 1rem; /* Font size for button text */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  text-transform: uppercase; /* Uppercase text */
 }
 
 .how-it-works .sign-up-button:hover {
